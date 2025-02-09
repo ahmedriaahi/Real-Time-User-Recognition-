@@ -1,0 +1,19 @@
+🛠️ Running Containers Individually
+🔹 Run Face Capture (Capture Images) :
+-  cd face_capture
+-  docker build -t face_capture .
+-  docker run --privileged -v image_storage:/image_storage -p 8888:8888 face_capture
+
+🔹 Train the Model (Train CNN on Collected Data) :
+-  cd training_model
+-  docker build -t training_model .
+-  docker run  -v image_storage:/image_storage -v models:/models -p 8888:8888 training_model
+
+🔹 Start Real-Time Detection (Identify Users) : 
+-  cd detection
+-  docker build -t detection .
+-  docker run  -v image_storage:/image_storage -v models:/models -p 5000:8888 training_model
+ detection
+
+🔹 Storage Volume : 
+-  docker volume create image_storage 
