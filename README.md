@@ -37,21 +37,25 @@ This system consists of **four Docker containers** working together:
  ┃ ┣ 📜 Dockerfile        # Docker setup for face_capture
 ```python
 docker build -t face_capture .
+```
 ```bash 
  ┣ 📂 training_model/      # CNN model training container
  ┃ ┣ 📜 train.py          # CNN training script
  ┃ ┣ 📜 Dockerfile        # Docker setup for training model
  ```python
 docker build -t training_model .
+```
 ```bash 
  ┣ 📂 detection/           # Real-time detection container
  ┃ ┣ 📜 detect.py         # Detects user in real-time
  ┃ ┣ 📜 Dockerfile        # Docker setup for detection
  ```python
 docker build -t detect .
+```
 ```bash 
  ┣ 📂image_storage/       # Docker volume for storing images
  ```python
 docker volume create image_storage
+```
 
 
