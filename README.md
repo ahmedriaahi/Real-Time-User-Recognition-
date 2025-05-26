@@ -1,4 +1,4 @@
-# Real-Time User Recognition 🚀  
+# Real-Time User Recognition 🎥  
 
 ## 📌 Project Overview  
 This project is a **real-time facial recognition system** that identifies users from a live video stream. It uses a **deep learning model** built with **TensorFlow** and **OpenCV**, running inside a **Docker container** for easy deployment.  
