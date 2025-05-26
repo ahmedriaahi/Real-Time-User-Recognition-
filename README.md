@@ -45,6 +45,5 @@ This system consists of **four Docker containers** working together:
  ┃ ┣ 📜 Dockerfile        # Docker setup for detection
  ┃ 
  ┣ 📂 image_storage/       # Docker volume for storing images
-
-
+```
 
